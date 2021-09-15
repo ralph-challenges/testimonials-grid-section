@@ -1,0 +1,54 @@
+@import './reset';
+@import './utils';
+
+@import './card-testimonial';
+@import './header-testimonial';
+
+:root {
+  --color-violet: hsl(263, 55%, 52%);
+  --color-gray-blue: hsl(217, 19%, 35%);
+  --color-blackish-blue: hsl(219, 29%, 14%);
+
+  --color-light-gray: hsl(0, 0%, 81%);
+  --color-light-grayish-blue: hsl(210, 46%, 95%);
+
+  --container-max-width: 1440px;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 100%;
+  background-color: var(--color-light-grayish-blue);
+}
+
+.container {
+  display: grid;
+  padding: 30px;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "testimonial-1 testimonial-1 testimonial-2 testimonial-3"
+    "testimonial-4 testimonial-5 testimonial-5 testimonial-3";
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  margin-top: 20px;
+
+  @include respond-max(1200px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "testimonial-1 testimonial-1 testimonial-2"
+    "testimonial-3 testimonial-3 testimonial-3"
+    "testimonial-4 testimonial-5 testimonial-5";
+  }
+
+  @include respond-max(600px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "testimonial-1"
+    "testimonial-2"
+    "testimonial-3"
+    "testimonial-4"
+    "testimonial-5";
+  }
+}

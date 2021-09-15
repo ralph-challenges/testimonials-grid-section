@@ -1,0 +1,5 @@
+@mixin respond-max($value) {
+  @media (max-width: $value) {
+    @content;
+  }
+}
