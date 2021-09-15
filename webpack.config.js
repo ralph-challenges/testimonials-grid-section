@@ -3,8 +3,13 @@ const path = require('path');
 
 module.exports = {
   entry: "./scss/app.scss",
+  output: {
+    path: path.resolve(__dirname, 'public')
+  },
   plugins: [
-    new MiniCssExtractPlugin()
+    new MiniCssExtractPlugin({
+      filename: 'main.css',
+    })
   ],
   module: {
     rules: [
