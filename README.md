@@ -27,12 +27,11 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop](./screenshots/desktop.png)
-![Tablet](./screenshots/tablet.png)
 ![Mobile](./screenshots/mobile.png)
 
 ### Links
 
-- Solution URL: [Gihub](https://github.com/ralph-challenges/testimonials-grid-section)
+- Solution URL: [Github](https://github.com/ralph-challenges/testimonials-grid-section)
 - Live Site URL: [Netlify](https://614230f63f23d0000757e1ed--cocky-rosalind-8bfc9a.netlify.app/)
 
 ## My process
